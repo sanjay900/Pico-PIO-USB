@@ -90,9 +90,9 @@ void __not_in_flash_func(pio_usb_bus_usb_transfer)(const pio_port_t *pp,
     continue;
   }
   pio_sm_clear_fifos(pp->pio_usb_tx, pp->sm_tx);
-  while (*pc < PIO_USB_TX_ENCODED_DATA_COMP) {
-    continue;
-  }
+  // while (*pc < PIO_USB_TX_ENCODED_DATA_COMP) {
+  //   continue;
+  // }
 }
 
 void __no_inline_not_in_flash_func(pio_usb_bus_send_handshake)(
